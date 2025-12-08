@@ -2,250 +2,137 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <title>Taxi Hamerský</title>
+  <title>Nebula Studio – digitální produkty nové generace</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Spolehlivá taxi služba ve vašem městě. Nonstop provoz, férové ceny a rychlý dojezd." />
-  <style>
-    :root {
-      --bg: #050816;
-      --card: #0f172a;
-      --accent: #facc15;
-      --accent-dark: #eab308;
-      --text-main: #e5e7eb;
-      --text-muted: #9ca3af;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #1f2937 0, #020617 55%, #000 100%);
-      color: var(--text-main);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-
-    .wrapper {
-      max-width: 480px;
-      width: 100%;
-    }
-
-    .card {
-      background: linear-gradient(145deg, #020617, #020617, #020617);
-      border-radius: 1.5rem;
-      border: 1px solid rgba(148, 163, 184, 0.25);
-      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.85);
-      padding: 2rem 1.8rem 1.6rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(250, 204, 21, 0.5);
-      color: var(--accent);
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 1.2rem;
-    }
-
-    .badge-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: #22c55e;
-      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.25);
-    }
-
-    h1 {
-      font-size: clamp(1.9rem, 4vw, 2.2rem);
-      line-height: 1.15;
-      margin-bottom: 0.5rem;
-    }
-
-    .highlight {
-      color: var(--accent);
-    }
-
-    .subtitle {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-bottom: 1.6rem;
-    }
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.9rem;
-      margin-bottom: 1.6rem;
-    }
-
-    .info-item {
-      padding: 0.7rem 0.8rem;
-      border-radius: 0.9rem;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(148, 163, 184, 0.3);
-      font-size: 0.8rem;
-    }
-
-    .info-label {
-      color: var(--text-muted);
-      font-size: 0.75rem;
-      margin-bottom: 0.15rem;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-    }
-
-    .info-value {
-      font-weight: 500;
-    }
-
-    .call-box {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .call-number {
-      font-size: 1.1rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-    }
-
-    .call-number span {
-      color: var(--accent);
-    }
-
-    .call-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      padding: 0.9rem 1.4rem;
-      border-radius: 999px;
-      border: none;
-      background: var(--accent);
-      color: #111827;
-      font-weight: 600;
-      font-size: 0.98rem;
-      text-decoration: none;
-      cursor: pointer;
-      box-shadow: 0 18px 30px rgba(250, 204, 21, 0.4);
-      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
-    }
-
-    .call-button:hover {
-      background: var(--accent-dark);
-      transform: translateY(-1px);
-      box-shadow: 0 22px 35px rgba(250, 204, 21, 0.5);
-    }
-
-    .call-button:active {
-      transform: translateY(0);
-      box-shadow: 0 10px 20px rgba(250, 204, 21, 0.35);
-    }
-
-    .call-icon {
-      width: 18px;
-      height: 18px;
-      border-radius: 999px;
-      border: 2px solid #111827;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-    }
-
-    .footnote {
-      font-size: 0.75rem;
-      color: #6b7280;
-    }
-
-    @media (max-width: 480px) {
-      .card {
-        padding: 1.6rem 1.4rem 1.4rem;
-      }
-
-      .info-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .call-box {
-        align-items: stretch;
-      }
-
-      .call-button {
-        width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <main class="card">
-      <div class="badge">
-        <span class="badge-dot"></span>
-        Taxi služba · Nonstop
-      </div>
-
-      <h1>
-        Taxi <span class="highlight">Hamerský</span><br />
-        Bezpečně domů kdykoli.
-      </h1>
-
-      <p class="subtitle">
-        Spolehlivá taxi služba pro Váš městský i meziměstský převoz. Férové ceny, pohodlné vozy a řidiči,
-        na které se můžete spolehnout.
-      </p>
-
-      <section class="info-grid" aria-label="Základní informace">
-        <article class="info-item">
-          <div class="info-label">Lokalita</div>
-          <div class="info-value">Vaše město a okolí</div>
-        </article>
-        <article class="info-item">
-          <div class="info-label">Provoz</div>
-          <div class="info-value">NONSTOP 24/7</div>
-        </article>
-        <article class="info-item">
-          <div class="info-label">Platba</div>
-          <div class="info-value">Hotově / karta</div>
-        </article>
-        <article class="info-item">
-          <div class="info-label">Objednání</div>
-          <div class="info-value">Telefonicky</div>
-        </article>
-      </section>
-
-      <section class="call-box" aria-label="Primární kontakt">
-        <div class="call-number">
-          Rezervace: <span>+420&nbsp;123&nbsp;456&nbsp;789</span>
+  <div class="app-shell">
+    <header class="nav">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">NS</div>
+        <div>
+          <div class="nav-title">Nebula Studio</div>
+          <div class="nav-subtitle">Digital products &amp; experiences</div>
         </div>
-        <a class="call-button" href="tel:+420123456789">
-          <span class="call-icon">📞</span>
-          <span>Zavolat Taxi Hamerský</span>
-        </a>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Úvod</a>
+        <a href="about.html">O studiu</a>
+        <a href="services.html">Služby</a>
+        <a href="work.html">Reference</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            Dostupná digitální agentura pro malé značky
+          </div>
+          <h1 class="hero-title">
+            Stavíme weby a digitální zážitky, <span>které lidé opravdu používají</span>.
+          </h1>
+          <p class="hero-text">
+            Pomáháme malým firmám, startupům i tvůrcům proměnit jejich nápady v rychlé, moderní
+            a dobře měřitelné online projekty. Od první skici až po nasazení.
+          </p>
+
+          <div class="hero-actions">
+            <a href="contact.html" class="btn-primary">Domluvme si 20min call</a>
+            <a href="work.html" class="btn-ghost">Podívat se na projekty</a>
+          </div>
+
+          <div class="hero-meta">
+            <span><strong>+40</strong> dokončených projektů</span>
+            <span><strong>2 týdny</strong> obvyklé dodání webu</span>
+            <span><strong>100&nbsp;%</strong> transparentní spolupráce</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="hero-card-tag">Živá data z posledních kampaní</div>
+          <div class="hero-card-main">
+            <div class="hero-metric">
+              <span class="hero-metric-label">Průměrné zrychlení webu</span>
+              <span class="hero-metric-value">3,4×</span>
+              <span class="hero-metric-label">po přechodu na statické řešení</span>
+            </div>
+            <div class="hero-chart">
+              <div class="hero-chart-line"></div>
+            </div>
+          </div>
+        </aside>
       </section>
 
-      <p class="footnote">
-        Doporučujeme uložit si číslo do kontaktů jako <strong>„Taxi Hamerský“</strong>, ať jste připraveni kdykoliv
-        vyrazit.
-      </p>
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Co děláme</div>
+            <h2 class="section-title">Od první myšlenky po spuštění kampaně</h2>
+          </div>
+          <p class="section-subtitle">
+            Ideální partner, pokud nechceš řešit pět různých dodavatelů. UX, design, vývoj a lehký
+            marketing držíme pod jednou střechou.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-label">UX &amp; UI</div>
+            <h3 class="card-title">Digitální produkty bez slepých uliček</h3>
+            <p class="card-text">
+              Navrhujeme jednoduché flows, které šetří čas tvým zákazníkům. Vše testujeme na reálných
+              scénářích, ne jen v hezkém figma prototypu.
+            </p>
+            <div class="card-meta">
+              <span>Mapy cest uživatele</span>
+              <span class="pill">Audit UX zdarma</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">Vývoj webů</div>
+            <h3 class="card-title">Rychlé weby na JAMstacku</h3>
+            <p class="card-text">
+              Statické weby, které se načítají během mrknutí oka. Ideální pro firemní weby, landingy,
+              kampaně nebo mikrosites.
+            </p>
+            <div class="card-meta">
+              <span>SEO-ready out of the box</span>
+              <span class="pill">GitHub Pages / Netlify</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">Kampaně</div>
+            <h3 class="card-title">Web propojený s reálným byznysem</h3>
+            <p class="card-text">
+              Propojíme web s analytikou a lehkým performance marketingem, aby bylo jasné, co přináší
+              tržby a co jen „hezké návštěvy“.
+            </p>
+            <div class="card-meta">
+              <span>GA4, Tag Manager</span>
+              <span class="pill">Report jednou měsíčně</span>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
   </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Nebula Studio. Všechna práva vyhrazena.</span>
+      <span>Postaveno jako ukázkový JAMstack projekt.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
