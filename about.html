@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>O studiu – Nebula Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="nav">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">NS</div>
+        <div>
+          <div class="nav-title">Nebula Studio</div>
+          <div class="nav-subtitle">Digital products &amp; experiences</div>
+        </div>
+      </a>
 
+      <nav class="nav-links">
+        <a href="index.html">Úvod</a>
+        <a href="about.html" class="active">O studiu</a>
+        <a href="services.html">Služby</a>
+        <a href="work.html">Reference</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Kdo jsme</div>
+            <h1 class="section-title">Malý tým, který pracuje přímo s majiteli firem</h1>
+          </div>
+          <p class="section-subtitle">
+            Žádné accounty, žádné schvalovací peklo. Mluvíš přímo s člověkem, který ti web navrhne
+            i postaví. Věříme v dlouhodobé spolupráce.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <div class="card-label">Jak pracujeme</div>
+            <h2 class="card-title">Proces v pěti jednoduchých krocích</h2>
+            <ul class="feature-list">
+              <li>
+                <span class="feature-bullet"></span>
+                Krátký call, kde pochopíme tvůj byznys a cíle.
+              </li>
+              <li>
+                <span class="feature-bullet"></span>
+                Rychlý audit současné online prezentace.
+              </li>
+              <li>
+                <span class="feature-bullet"></span>
+                Společně poskládáme strukturu webu a klíčové stránky.
+              </li>
+              <li>
+                <span class="feature-bullet"></span>
+                Návrh prototypu + obsah, který dává smysl i laikovi.
+              </li>
+              <li>
+                <span class="feature-bullet"></span>
+                Vývoj, testování na mobilech a spuštění kampaně.
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-label">Pro koho jsme ideální</div>
+            <h2 class="card-title">Když chceš partnera, ne jen dodavatele</h2>
+            <p class="card-text">
+              Nejlépe si rozumíme s podnikateli, kteří mají jasno v tom, co prodávají, ale online
+              svět pro ně zatím nebyl priorita. Tam umíme přinést největší změnu.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <span class="feature-bullet"></span>
+                Menší a střední firmy (10–100 lidí).
+              </li>
+              <li>
+                <span class="feature-bullet"></span>
+                Freelance tvůrci a studia, která potřebují nový web.
+              </li>
+              <li>
+                <span class="feature-bullet"></span>
+                Projekty, kde chceme měřit výsledky, ne jen „feeling“.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Nebula Studio.</span>
+      <span>O studiu &mdash; ukázkový projekt.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
