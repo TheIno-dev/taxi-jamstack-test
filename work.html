@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reference – Nebula Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="nav">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">NS</div>
+        <div>
+          <div class="nav-title">Nebula Studio</div>
+          <div class="nav-subtitle">Digital products &amp; experiences</div>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Úvod</a>
+        <a href="about.html">O studiu</a>
+        <a href="services.html">Služby</a>
+        <a href="work.html" class="active">Reference</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Naše práce</div>
+            <h1 class="section-title">Projekty, které nám dělají radost</h1>
+          </div>
+          <p class="section-subtitle">
+            Ukázky webů postavených na statickém řešení s důrazem na výkon, čitelnost a jasné cíle.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-label">Služby</div>
+            <h2 class="card-title">Taxi Alpha</h2>
+            <p class="card-text">
+              Jednoduchý jednostránkový web zaměřený na rychlé objednání jízdy přes telefon a WhatsApp.
+            </p>
+            <div class="card-meta">
+              <span>+38 % více hovorů</span>
+              <span class="pill">Lighthouse 98/100</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">B2B</div>
+            <h2 class="card-title">IS Energo</h2>
+            <p class="card-text">
+              Redesign firemního webu s důrazem na technologie, reference a získávání poptávek z průmyslu.
+            </p>
+            <div class="card-meta">
+              <span>2× více poptávek</span>
+              <span class="pill">JAMstack</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">Kreativní obor</div>
+            <h2 class="card-title">Studio Lumen</h2>
+            <p class="card-text">
+              Portfoliový web pro fotografa s rychlým načítáním galerií a důrazem na vizuální obsah.
+            </p>
+            <div class="card-meta">
+              <span>Odezva &lt; 0,5 s</span>
+              <span class="pill">Full-screen galerie</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Nebula Studio.</span>
+      <span>Reference – ukázková data.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
