@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Služby – Nebula Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="nav">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">NS</div>
+        <div>
+          <div class="nav-title">Nebula Studio</div>
+          <div class="nav-subtitle">Digital products &amp; experiences</div>
+        </div>
+      </a>
 
+      <nav class="nav-links">
+        <a href="index.html">Úvod</a>
+        <a href="about.html">O studiu</a>
+        <a href="services.html" class="active">Služby</a>
+        <a href="work.html">Reference</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Nabídka</div>
+            <h1 class="section-title">Balíčky, které dávají smysl malým značkám</h1>
+          </div>
+          <p class="section-subtitle">
+            Místo desítek položek v ceníku máme několik jasných balíčků. Vždy víš, co dostaneš a
+            co následuje.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-label">Start</div>
+            <h2 class="card-title">Jednostránkový web</h2>
+            <p class="card-text">
+              Ideální pro služby jako taxi, řemeslník, konzultant. Jasný příběh, CTA a kontakt.
+            </p>
+            <ul class="feature-list">
+              <li><span class="feature-bullet"></span>1–3 sekce + kontakt</li>
+              <li><span class="feature-bullet"></span>Optimalizace pro mobil</li>
+              <li><span class="feature-bullet"></span>Napojení na Google Business</li>
+            </ul>
+            <div class="card-meta">
+              <span>Cena orientačně</span>
+              <span class="pill">od 8 900 Kč</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">Grow</div>
+            <h2 class="card-title">Plnohodnotný web</h2>
+            <p class="card-text">
+              Pro firmy, které chtějí prezentovat služby, tým, reference i články. Rychlý, SEO-ready
+              JAMstack web.
+            </p>
+            <ul class="feature-list">
+              <li><span class="feature-bullet"></span>5–8 šablon stránek</li>
+              <li><span class="feature-bullet"></span>Blog / novinky</li>
+              <li><span class="feature-bullet"></span>Napojení na analytiku</li>
+            </ul>
+            <div class="card-meta">
+              <span>Cena orientačně</span>
+              <span class="pill">od 24 000 Kč</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">Scale</div>
+            <h2 class="card-title">Digitální produkt / aplikace</h2>
+            <p class="card-text">
+              Když už web nestačí – návrh a vývoj jednoduchých interních nástrojů, klientských zón
+              či portálů.
+            </p>
+            <ul class="feature-list">
+              <li><span class="feature-bullet"></span>UX research &amp; prototyp</li>
+              <li><span class="feature-bullet"></span>Iterativní dodávka</li>
+              <li><span class="feature-bullet"></span>Napojení na vaše systémy</li>
+            </ul>
+            <div class="card-meta">
+              <span>Cena na dotaz</span>
+              <span class="pill">Full-stack řešení</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Nebula Studio.</span>
+      <span>Služby – ukázkové balíčky.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
