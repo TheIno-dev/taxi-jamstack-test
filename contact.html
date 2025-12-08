@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kontakt – Nebula Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="nav">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">NS</div>
+        <div>
+          <div class="nav-title">Nebula Studio</div>
+          <div class="nav-subtitle">Digital products &amp; experiences</div>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Úvod</a>
+        <a href="about.html">O studiu</a>
+        <a href="services.html">Služby</a>
+        <a href="work.html">Reference</a>
+        <a href="contact.html" class="active">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Spojme se</div>
+            <h1 class="section-title">Pojďme si nezávazně popovídat o tvém projektu</h1>
+          </div>
+          <p class="section-subtitle">
+            Napiš pár vět o tom, co řešíš. Ozveme se ti zpět s návrhem, jestli a jak umíme pomoci.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <form class="card form">
+            <div class="form-row">
+              <label class="form-label" for="name">Jméno / firma</label>
+              <input class="form-input" type="text" id="name" placeholder="Jan Novák, Alfa s.r.o." />
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="email">E-mail</label>
+              <input class="form-input" type="email" id="email" placeholder="jan@firma.cz" />
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="message">Stručně co řešíš</label>
+              <textarea class="form-textarea" id="message" placeholder="Potřebujeme nový web, který nám bude reálně vozit poptávky."></textarea>
+            </div>
+            <button class="btn-primary" type="submit">Odeslat nezávaznou poptávku</button>
+          </form>
+
+          <article class="card">
+            <div class="card-label">Rychlý kontakt</div>
+            <h2 class="card-title">Preferuješ telefon?</h2>
+            <p class="card-text">
+              Zavolej nám kdykoli mezi 9–17 h ve všední dny. Když nezvedneme, ozveme se zpět do
+              jednoho pracovního dne.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <span class="feature-bullet"></span>
+                Telefon: <a href="tel:+420123456789">+420 123 456 789</a>
+              </li>
+              <li>
+                <span class="feature-bullet"></span>
+                E-mail: <a href="mailto:ahoj@nebulastudio.cz">ahoj@nebulastudio.cz</a>
+              </li>
+              <li>
+                <span class="feature-bullet"></span>
+                Online: krátký call přes Google Meet nebo Zoom.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Nebula Studio.</span>
+      <span>Kontakt – ukázkový formulář (zatím bez backendu).</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
