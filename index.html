@@ -1,138 +1,255 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <title>Nebula Studio – digitální produkty nové generace</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Novák | Growth Architect & Data Strategist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            accent: '#10B981', // Emerald Green (Symbolizes Profit/Data OK)
+                            text: '#E5E7EB',
+                            muted: '#9CA3AF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0B0F19; color: #E5E7EB; }
+        .grid-bg {
+            background-image: radial-gradient(#1f2937 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+    </style>
 </head>
-<body>
-  <div class="app-shell">
-    <header class="nav">
-      <a href="index.html" class="nav-brand">
-        <div class="nav-logo">NS</div>
-        <div>
-          <div class="nav-title">Nebula Studio</div>
-          <div class="nav-subtitle">Digital products &amp; experiences</div>
-        </div>
-      </a>
+<body class="antialiased selection:bg-brand-accent selection:text-brand-dark">
 
-      <nav class="nav-links">
-        <a href="index.html" class="active">Úvod</a>
-        <a href="about.html">O studiu</a>
-        <a href="services.html">Služby</a>
-        <a href="work.html">Reference</a>
-        <a href="contact.html">Kontakt</a>
-      </nav>
+    <nav class="fixed w-full z-50 glass-card border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <span class="font-mono text-xl font-bold text-brand-accent">&lt;Growth_Arch /&gt;</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#problem" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Problém</a>
+                        <a href="#reseni" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Metodika</a>
+                        <a href="#sluzby" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Služby</a>
+                        <a href="#kontakt" class="bg-brand-accent text-brand-dark px-5 py-2 rounded-md text-sm font-bold hover:bg-green-400 transition-all shadow-[0_0_15px_rgba(16,185,129,0.4)]">
+                            Konzultace zdarma
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative grid-bg min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-dark"></div>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-gray-700 bg-gray-900/50 backdrop-blur-sm">
+                <span class="text-brand-accent font-mono text-xs uppercase tracking-widest">Nová éra efektivity 2025</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
+                Přestaňte pálit peníze za <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600">kliky</span>.<br>
+                Investujte do <span class="text-brand-accent glow-text">architektury zisku</span>.
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-brand-muted">
+                Jsem strategický integrátor. Spojuji <strong class="text-white">čistá data</strong>, <strong class="text-white">AI automatizaci</strong> a <strong class="text-white">obchodní strategii</strong>, abych zvýšil vaše ROI a snížil závislost na manuální práci.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#kontakt" class="px-8 py-4 border border-transparent text-base font-bold rounded-md text-brand-dark bg-brand-accent hover:bg-green-400 md:text-lg transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                    Chci Audit Efektivity
+                </a>
+                <a href="#problem" class="px-8 py-4 border border-gray-700 text-base font-medium rounded-md text-gray-300 bg-gray-900/50 hover:bg-gray-800 md:text-lg transition-all">
+                    Proč marketing nefunguje?
+                </a>
+            </div>
+            
+            <div class="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4 border-t border-gray-800 pt-8">
+                <div>
+                    <div class="text-3xl font-mono font-bold text-white">SQL & AI</div>
+                    <div class="text-sm text-brand-muted mt-1">Stack</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-mono font-bold text-white">EAA 2025</div>
+                    <div class="text-sm text-brand-muted mt-1">Compliance</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-mono font-bold text-brand-accent">250 %</div>
+                    <div class="text-sm text-brand-muted mt-1">Průměrné ROI</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-mono font-bold text-white">Server-Side</div>
+                    <div class="text-sm text-brand-muted mt-1">Tracking</div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div>
-          <div class="hero-badge">
-            <div class="hero-badge-dot"></div>
-            Dostupná digitální agentura pro malé značky
-          </div>
-          <h1 class="hero-title">
-            Stavíme weby a digitální zážitky, <span>které lidé opravdu používají</span>.
-          </h1>
-          <p class="hero-text">
-            Pomáháme malým firmám, startupům i tvůrcům proměnit jejich nápady v rychlé, moderní
-            a dobře měřitelné online projekty. Od první skici až po nasazení.
-          </p>
+    <section id="problem" class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Digitální smog vás stojí peníze</h2>
+                <p class="mt-4 text-brand-muted text-lg">Proč tradiční přístup "zaplatíme reklamu a uvidíme" v roce 2025 selhává.</p>
+            </div>
 
-          <div class="hero-actions">
-            <a href="contact.html" class="btn-primary">Domluvme si 20min call</a>
-            <a href="work.html" class="btn-ghost">Podívat se na projekty</a>
-          </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-900/30 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Data Garbage</h3>
+                    <p class="text-gray-400">Vaše GA4 neukazují pravdu. Rozhodujete se podle pocitů, zatímco AI potřebuje přesná data. Výsledek? Špatné investice.</p>
+                </div>
 
-          <div class="hero-meta">
-            <span><strong>+40</strong> dokončených projektů</span>
-            <span><strong>2 týdny</strong> obvyklé dodání webu</span>
-            <span><strong>100&nbsp;%</strong> transparentní spolupráce</span>
-          </div>
+                <div class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-yellow-900/30 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">AI Halucinace</h3>
+                    <p class="text-gray-400">Generování obsahu bez strategie vede ke ztrátě důvěry. Zákazníci poznají strojový text a ignorují ho.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Legislativní Past</h3>
+                    <p class="text-gray-400">Evropský akt přístupnosti (2025) a konec cookies 3. stran. Pokud nemáte technické řešení, hrozí vám pokuty a slepota.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <aside class="hero-card">
-          <div class="hero-card-tag">Živá data z posledních kampaní</div>
-          <div class="hero-card-main">
-            <div class="hero-metric">
-              <span class="hero-metric-label">Průměrné zrychlení webu</span>
-              <span class="hero-metric-value">3,4×</span>
-              <span class="hero-metric-label">po přechodu na statické řešení</span>
+    <section id="reseni" class="py-24 border-y border-gray-800 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:gap-16">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-white mb-6">Nejsem "Marketer". Jsem Architekt.</h2>
+                    <p class="text-lg text-gray-400 mb-6">
+                        Zatímco agentury vám prodávají hodiny práce juniorů, já vám prodávám funkční systém. Stavím mosty mezi vašimi daty a ziskem.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 h-6 w-6 text-brand-accent">✓</span>
+                            <span class="ml-3 text-gray-300"><strong>Data First:</strong> SQL analýza před jakoukoliv kreativitou.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 h-6 w-6 text-brand-accent">✓</span>
+                            <span class="ml-3 text-gray-300"><strong>Automatizace:</strong> Procesy, které běží 24/7 bez vaší účasti (Make/n8n).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 h-6 w-6 text-brand-accent">✓</span>
+                            <span class="ml-3 text-gray-300"><strong>Bezpečnost:</strong> Server-side tracking a GDPR compliance.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-[#0f1420] rounded-lg border border-gray-700 p-6 font-mono text-sm shadow-2xl">
+                        <div class="flex space-x-2 mb-4">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="text-gray-400">
+                            <p><span class="text-purple-400">const</span> <span class="text-blue-400">profitStrategy</span> = <span class="text-purple-400">async</span> () => {</p>
+                            <p class="pl-4"><span class="text-gray-500">// 1. Clean Data Source</span></p>
+                            <p class="pl-4"><span class="text-purple-400">const</span> data = <span class="text-purple-400">await</span> sql.<span class="text-blue-300">query</span>(<span class="text-green-400">'SELECT * FROM crm_clean'</span>);</p>
+                            <p class="pl-4 text-transparent">.</p>
+                            <p class="pl-4"><span class="text-gray-500">// 2. AI Optimization</span></p>
+                            <p class="pl-4"><span class="text-purple-400">const</span> insight = ai.<span class="text-blue-300">analyze</span>(data, { model: <span class="text-green-400">'gpt-4-turbo'</span> });</p>
+                            <p class="pl-4 text-transparent">.</p>
+                            <p class="pl-4"><span class="text-gray-500">// 3. Automated Action</span></p>
+                            <p class="pl-4"><span class="text-purple-400">return</span> automation.<span class="text-blue-300">trigger</span>(<span class="text-green-400">'increase_roi'</span>, insight);</p>
+                            <p>}</p>
+                            <p class="mt-2 text-brand-accent font-bold">> System Ready. ROI Optimized.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="hero-chart">
-              <div class="hero-chart-line"></div>
-            </div>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Co děláme</div>
-            <h2 class="section-title">Od první myšlenky po spuštění kampaně</h2>
-          </div>
-          <p class="section-subtitle">
-            Ideální partner, pokud nechceš řešit pět různých dodavatelů. UX, design, vývoj a lehký
-            marketing držíme pod jednou střechou.
-          </p>
         </div>
+    </section>
 
-        <div class="grid grid-3">
-          <article class="card">
-            <div class="card-label">UX &amp; UI</div>
-            <h3 class="card-title">Digitální produkty bez slepých uliček</h3>
-            <p class="card-text">
-              Navrhujeme jednoduché flows, které šetří čas tvým zákazníkům. Vše testujeme na reálných
-              scénářích, ne jen v hezkém figma prototypu.
-            </p>
-            <div class="card-meta">
-              <span>Mapy cest uživatele</span>
-              <span class="pill">Audit UX zdarma</span>
-            </div>
-          </article>
+    <section id="sluzby" class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white text-center mb-16">High-Value Služby</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors group">
+                    <h3 class="text-xl font-bold text-white group-hover:text-brand-accent mb-4">Datová hygiena & Audit</h3>
+                    <p class="text-gray-400 mb-4">Oprava měření v GA4, nastavení BigQuery a SQL reportingu. Budete vědět přesně, kam teče každá koruna.</p>
+                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">SQL</span>
+                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">Looker Studio</span>
+                </div>
 
-          <article class="card">
-            <div class="card-label">Vývoj webů</div>
-            <h3 class="card-title">Rychlé weby na JAMstacku</h3>
-            <p class="card-text">
-              Statické weby, které se načítají během mrknutí oka. Ideální pro firemní weby, landingy,
-              kampaně nebo mikrosites.
-            </p>
-            <div class="card-meta">
-              <span>SEO-ready out of the box</span>
-              <span class="pill">GitHub Pages / Netlify</span>
-            </div>
-          </article>
+                <div class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors group">
+                    <h3 class="text-xl font-bold text-white group-hover:text-brand-accent mb-4">Automatizace Procesů</h3>
+                    <p class="text-gray-400 mb-4">Propojení vašeho e-shopu, CRM a marketingu přes Make.com. Ušetříte desítky hodin manuální práce týdně.</p>
+                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">Make.com</span>
+                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">API</span>
+                </div>
 
-          <article class="card">
-            <div class="card-label">Kampaně</div>
-            <h3 class="card-title">Web propojený s reálným byznysem</h3>
-            <p class="card-text">
-              Propojíme web s analytikou a lehkým performance marketingem, aby bylo jasné, co přináší
-              tržby a co jen „hezké návštěvy“.
-            </p>
-            <div class="card-meta">
-              <span>GA4, Tag Manager</span>
-              <span class="pill">Report jednou měsíčně</span>
+                <div class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors group">
+                    <h3 class="text-xl font-bold text-white group-hover:text-brand-accent mb-4">Risk & Compliance</h3>
+                    <p class="text-gray-400 mb-4">Příprava webu na European Accessibility Act 2025. Technický audit a implementace přístupnosti.</p>
+                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">WCAG 2.1</span>
+                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">Audit</span>
+                </div>
             </div>
-          </article>
         </div>
-      </section>
-    </main>
-  </div>
+    </section>
 
-  <footer>
-    <div class="footer-inner">
-      <span>© <span id="year"></span> Nebula Studio. Všechna práva vyhrazena.</span>
-      <span>Postaveno jako ukázkový JAMstack projekt.</span>
-    </div>
-  </footer>
+    <section id="kontakt" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand-accent/5"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-6">Máte data, ale nemáte výsledky?</h2>
+            <p class="text-xl text-gray-300 mb-10">Nabízím 30minutový bezplatný audit, kde se podíváme na vaše data a řeknu vám, kde ztrácíte peníze.</p>
+            
+            <form class="max-w-md mx-auto space-y-4 bg-gray-900 p-8 rounded-xl border border-gray-700 shadow-2xl">
+                <div>
+                    <label class="block text-left text-sm font-medium text-gray-400 mb-1">Váš Email</label>
+                    <input type="email" placeholder="jan@firma.cz" class="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent">
+                </div>
+                <div>
+                    <label class="block text-left text-sm font-medium text-gray-400 mb-1">Webová stránka</label>
+                    <input type="text" placeholder="www.vasefirma.cz" class="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent">
+                </div>
+                <button type="button" class="w-full bg-brand-accent text-brand-dark font-bold py-3 rounded hover:bg-green-400 transition-colors">
+                    Rezervovat Audit Zisku
+                </button>
+                <p class="text-xs text-gray-500 mt-4">Žádný spam. Pouze data a strategie.</p>
+            </form>
+        </div>
+    </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <footer class="border-t border-gray-800 py-12 bg-brand-dark text-center">
+        <div class="text-brand-accent font-mono font-bold text-lg mb-4">&lt;Growth_Arch /&gt;</div>
+        <p class="text-gray-500 text-sm">© 2025 Jan Novák. Data-Driven Growth Architect.</p>
+    </footer>
+
 </body>
 </html>
