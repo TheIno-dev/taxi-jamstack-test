@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jan Novák | Growth Architect & Data Strategist</title>
+    <title>Filip Hamerský | Weby & Online přítomnost pro malé a technické firmy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script>
@@ -18,7 +18,7 @@
                         brand: {
                             dark: '#0B0F19',
                             card: '#111827',
-                            accent: '#10B981', // Emerald Green (Symbolizes Profit/Data OK)
+                            accent: '#10B981', // Emerald Green
                             text: '#E5E7EB',
                             muted: '#9CA3AF'
                         }
@@ -45,19 +45,24 @@
 </head>
 <body class="antialiased selection:bg-brand-accent selection:text-brand-dark">
 
-    <nav class="fixed w-full z-50 glass-card border-b border-gray-800">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-black focus:text-white focus:px-4 focus:py-2 focus:rounded">
+        Přeskočit na hlavní obsah
+    </a>
+
+    <nav class="fixed w-full z-40 glass-card border-b border-gray-800" aria-label="Hlavní navigace">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex items-center">
-                    <span class="font-mono text-xl font-bold text-brand-accent">&lt;Growth_Arch /&gt;</span>
+                <div class="flex items-center gap-3">
+                    <span class="font-mono text-xl font-bold text-brand-accent">&lt;FH_WebPartner /&gt;</span>
+                    <span class="hidden sm:inline text-sm text-brand-muted">Weby & online přítomnost pro malé a technické firmy</span>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#problem" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Problém</a>
-                        <a href="#reseni" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Metodika</a>
-                        <a href="#sluzby" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Služby</a>
+                        <a href="#problem" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Problémy firem</a>
+                        <a href="#reseni" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Jak pracuji</a>
+                        <a href="#sluzby" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Balíčky</a>
                         <a href="#kontakt" class="bg-brand-accent text-brand-dark px-5 py-2 rounded-md text-sm font-bold hover:bg-green-400 transition-all shadow-[0_0_15px_rgba(16,185,129,0.4)]">
-                            Konzultace zdarma
+                            Domluvit konzultaci
                         </a>
                     </div>
                 </div>
@@ -65,190 +70,316 @@
         </div>
     </nav>
 
-    <header class="relative grid-bg min-h-screen flex items-center justify-center pt-20">
+    <header class="relative grid-bg min-h-screen flex items-center justify-center pt-24">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-dark"></div>
-        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+        <div id="main-content" class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
             <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-gray-700 bg-gray-900/50 backdrop-blur-sm">
-                <span class="text-brand-accent font-mono text-xs uppercase tracking-widest">Nová éra efektivity 2025</span>
+                <span class="text-brand-accent font-mono text-xs uppercase tracking-widest">Web & online přítomnost 2026</span>
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
-                Přestaňte pálit peníze za <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600">kliky</span>.<br>
-                Investujte do <span class="text-brand-accent glow-text">architektury zisku</span>.
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Nechcete jen web.<br>
+                Chcete <span class="text-brand-accent glow-text">funkční online systém</span>.
             </h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-brand-muted">
-                Jsem strategický integrátor. Spojuji <strong class="text-white">čistá data</strong>, <strong class="text-white">AI automatizaci</strong> a <strong class="text-white">obchodní strategii</strong>, abych zvýšil vaše ROI a snížil závislost na manuální práci.
+            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-brand-muted">
+                Jsem digitální partner pro malé a technické firmy. Spojuji <strong class="text-white">web</strong>, 
+                <strong class="text-white">dohledatelnost</strong> a <strong class="text-white">legální minimum</strong> do jednoho 
+                srozumitelného balíčku, který vám pomáhá získávat zakázky – ne jen být „na internetu“.
             </p>
             <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#kontakt" class="px-8 py-4 border border-transparent text-base font-bold rounded-md text-brand-dark bg-brand-accent hover:bg-green-400 md:text-lg transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]">
-                    Chci Audit Efektivity
+                    Chci nezávaznou konzultaci
                 </a>
-                <a href="#problem" class="px-8 py-4 border border-gray-700 text-base font-medium rounded-md text-gray-300 bg-gray-900/50 hover:bg-gray-800 md:text-lg transition-all">
-                    Proč marketing nefunguje?
+                <a href="#sluzby" class="px-8 py-4 border border-gray-700 text-base font-medium rounded-md text-gray-300 bg-gray-900/50 hover:bg-gray-800 md:text-lg transition-all">
+                    Podívat se na balíčky
                 </a>
             </div>
-            
-            <div class="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4 border-t border-gray-800 pt-8">
+
+            <div class="mt-14 grid grid-cols-2 gap-8 md:grid-cols-4 border-t border-gray-800 pt-8 text-left md:text-center">
                 <div>
-                    <div class="text-3xl font-mono font-bold text-white">SQL & AI</div>
-                    <div class="text-sm text-brand-muted mt-1">Stack</div>
+                    <div class="text-2xl font-mono font-bold text-white">SME & B2B</div>
+                    <div class="text-sm text-brand-muted mt-1">Malé a technické firmy</div>
                 </div>
                 <div>
-                    <div class="text-3xl font-mono font-bold text-white">EAA 2025</div>
-                    <div class="text-sm text-brand-muted mt-1">Compliance</div>
+                    <div class="text-2xl font-mono font-bold text-white">GA4 & SEO</div>
+                    <div class="text-sm text-brand-muted mt-1">Dohledatelnost & měření</div>
                 </div>
                 <div>
-                    <div class="text-3xl font-mono font-bold text-brand-accent">250 %</div>
-                    <div class="text-sm text-brand-muted mt-1">Průměrné ROI</div>
+                    <div class="text-2xl font-mono font-bold text-brand-accent">EAA • GDPR</div>
+                    <div class="text-sm text-brand-muted mt-1">Legální minimum v ceně</div>
                 </div>
                 <div>
-                    <div class="text-3xl font-mono font-bold text-white">Server-Side</div>
-                    <div class="text-sm text-brand-muted mt-1">Tracking</div>
+                    <div class="text-2xl font-mono font-bold text-white">Care Plans</div>
+                    <div class="text-sm text-brand-muted mt-1">Dlouhodobá péče o web</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="problem" class="py-24 bg-brand-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">Digitální smog vás stojí peníze</h2>
-                <p class="mt-4 text-brand-muted text-lg">Proč tradiční přístup "zaplatíme reklamu a uvidíme" v roce 2025 selhává.</p>
-            </div>
+    <main>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
-                    <div class="w-12 h-12 bg-red-900/30 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Data Garbage</h3>
-                    <p class="text-gray-400">Vaše GA4 neukazují pravdu. Rozhodujete se podle pocitů, zatímco AI potřebuje přesná data. Výsledek? Špatné investice.</p>
-                </div>
-
-                <div class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
-                    <div class="w-12 h-12 bg-yellow-900/30 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">AI Halucinace</h3>
-                    <p class="text-gray-400">Generování obsahu bez strategie vede ke ztrátě důvěry. Zákazníci poznají strojový text a ignorují ho.</p>
-                </div>
-
-                <div class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
-                    <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Legislativní Past</h3>
-                    <p class="text-gray-400">Evropský akt přístupnosti (2025) a konec cookies 3. stran. Pokud nemáte technické řešení, hrozí vám pokuty a slepota.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="reseni" class="py-24 border-y border-gray-800 bg-gray-900/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:flex lg:items-center lg:gap-16">
-                <div class="lg:w-1/2 mb-12 lg:mb-0">
-                    <h2 class="text-3xl font-bold text-white mb-6">Nejsem "Marketer". Jsem Architekt.</h2>
-                    <p class="text-lg text-gray-400 mb-6">
-                        Zatímco agentury vám prodávají hodiny práce juniorů, já vám prodávám funkční systém. Stavím mosty mezi vašimi daty a ziskem.
+        <!-- PROBLÉMY -->
+        <section id="problem" class="py-24 bg-brand-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Typické problémy malých a technických firem</h2>
+                    <p class="mt-4 text-brand-muted text-lg">
+                        „Máme web, ale nic z něj není.“ „Nejsme vidět.“ „Bojujeme s cookies a legislativou.“  
+                        To není chyba internetu – je to chybějící systém.
                     </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <article class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
+                        <div class="w-12 h-12 bg-red-900/30 rounded-lg flex items-center justify-center mb-6">
+                            <span aria-hidden="true" class="text-red-400 text-2xl">✕</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">„Web máme, ale nefunguje“</h3>
+                        <p class="text-gray-400">
+                            Pěkný, ale pomalý web bez měření, bez jasné cesty k poptávce a bez návštěvnosti. 
+                            Zákazníci se ztratí dřív, než vám stihnou napsat.
+                        </p>
+                    </article>
+
+                    <article class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
+                        <div class="w-12 h-12 bg-yellow-900/30 rounded-lg flex items-center justify-center mb-6">
+                            <span aria-hidden="true" class="text-yellow-300 text-2xl">!</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">„Nikde nás nejde najít“</h3>
+                        <p class="text-gray-400">
+                            Nevyplněné profily, nulové lokální SEO, žádné recenze. 
+                            Google, Seznam ani AI nemají z čeho brát – takže berou konkurenci.
+                        </p>
+                    </article>
+
+                    <article class="glass-card p-8 rounded-xl hover:border-brand-accent/50 transition-all duration-300">
+                        <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-6">
+                            <span aria-hidden="true" class="text-blue-300 text-2xl">⚖</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">„Bojujeme s cookies a EAA“</h3>
+                        <p class="text-gray-400">
+                            Chaotická cookie lišta, nejasné texty, staré formuláře, žádná přístupnost. 
+                            Zbytečné riziko vůči GDPR a European Accessibility Actu – přitom technicky řešitelné.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- JAK PRACUJI -->
+        <section id="reseni" class="py-24 border-y border-gray-800 bg-gray-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:flex lg:items-start lg:gap-16">
+                    <div class="lg:w-1/2 mb-12 lg:mb-0">
+                        <h2 class="text-3xl font-bold text-white mb-6">Ne „jen web“. Kompletní online přítomnost.</h2>
+                        <p class="text-lg text-gray-400 mb-6">
+                            Nepřijdu s hotovou šablonou. Nejdřív pochopím váš byznys, zákazníky a realitu provozu. 
+                            A teprve potom navrhnu web a okolní systém – tak, aby šlo vše udržet dlouhodobě a s rozumnými náklady.
+                        </p>
+                        
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 h-6 w-6 text-brand-accent" aria-hidden="true">✓</span>
+                                <span class="ml-3 text-gray-300">
+                                    <strong>Analýza & struktura:</strong> Společně si ujasníme cíle, zákazníky a priority. 
+                                    Z toho vznikne struktura webu a obsahová kostra.
+                                </span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 h-6 w-6 text-brand-accent" aria-hidden="true">✓</span>
+                                <span class="ml-3 text-gray-300">
+                                    <strong>Dohledatelnost & měření:</strong> Nastavím GA4, základní SEO, lokální profily a 
+                                    strukturovaná data, aby web dával smysl lidem i vyhledávačům (včetně AI).
+                                </span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 h-6 w-6 text-brand-accent" aria-hidden="true">✓</span>
+                                <span class="ml-3 text-gray-300">
+                                    <strong>Compliance & přístupnost:</strong> Základní technická opatření pro GDPR, cookies a 
+                                    přístupnost (WCAG/EAA) jako součást standardu, ne doplněk.
+                                </span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 h-6 w-6 text-brand-accent" aria-hidden="true">✓</span>
+                                <span class="ml-3 text-gray-300">
+                                    <strong>Dlouhodobá péče:</strong> Po spuštění web nekončí. Nabízím průběžné úpravy, 
+                                    aktualizace a dohled – aby byl web stále funkční, bezpečný a aktuální.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                     
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <span class="flex-shrink-0 h-6 w-6 text-brand-accent">✓</span>
-                            <span class="ml-3 text-gray-300"><strong>Data First:</strong> SQL analýza před jakoukoliv kreativitou.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="flex-shrink-0 h-6 w-6 text-brand-accent">✓</span>
-                            <span class="ml-3 text-gray-300"><strong>Automatizace:</strong> Procesy, které běží 24/7 bez vaší účasti (Make/n8n).</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="flex-shrink-0 h-6 w-6 text-brand-accent">✓</span>
-                            <span class="ml-3 text-gray-300"><strong>Bezpečnost:</strong> Server-side tracking a GDPR compliance.</span>
-                        </li>
-                    </ul>
+                    <div class="lg:w-1/2">
+                        <div class="bg-[#0f1420] rounded-lg border border-gray-700 p-6 font-mono text-sm shadow-2xl" aria-label="Ukázkový proces">
+                            <div class="flex space-x-2 mb-4">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="text-gray-400">
+                                <p><span class="text-purple-400">const</span> <span class="text-blue-400">buildOnlinePresence</span> = <span class="text-purple-400">async</span> (client) =&gt; {</p>
+                                <p class="pl-4"><span class="text-gray-500">// 1. Pochopení byznysu</span></p>
+                                <p class="pl-4"><span class="text-purple-400">const</span> goals = <span class="text-blue-300">defineGoals</span>(client);</p>
+                                <p class="pl-4 text-transparent">.</p>
+                                <p class="pl-4"><span class="text-gray-500">// 2. Web + profily + SEO základ</span></p>
+                                <p class="pl-4"><span class="text-purple-400">const</span> site = <span class="text-blue-300">buildSite</span>(goals, { cms: <span class="text-green-400">'WordPress'</span>, builder: <span class="text-green-400">'Bricks'</span> });</p>
+                                <p class="pl-4"><span class="text-blue-300">setupLocalSEO</span>(site);</p>
+                                <p class="pl-4 text-transparent">.</p>
+                                <p class="pl-4"><span class="text-gray-500">// 3. Měření & compliance</span></p>
+                                <p class="pl-4"><span class="text-blue-300">setupGA4</span>(site);</p>
+                                <p class="pl-4"><span class="text-blue-300">setupConsent</span>(site, { gdpr: <span class="text-purple-400">true</span>, eaa: <span class="text-purple-400">true</span> });</p>
+                                <p class="pl-4 text-transparent">.</p>
+                                <p class="pl-4"><span class="text-gray-500">// 4. Dlouhodobá péče</span></p>
+                                <p class="pl-4"><span class="text-blue-300">startCarePlan</span>(site);</p>
+                                <p class="pl-4"><span class="text-purple-400">return</span> site;</p>
+                                <p>}</p>
+                                <p class="mt-3 text-brand-accent font-bold">&gt; Online přítomnost připravena. Web se stará o byznys, ne naopak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLUŽBY / BALÍČKY -->
+        <section id="sluzby" class="py-24 bg-brand-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-white">Produktizované balíčky</h2>
+                    <p class="mt-4 text-brand-muted text-lg">
+                        Jasně popsaný rozsah, žádné „uvidíme“. Každý balíček může být upraven podle konkrétní situace, 
+                        ale základ zůstává srozumitelný.
+                    </p>
                 </div>
                 
-                <div class="lg:w-1/2">
-                    <div class="bg-[#0f1420] rounded-lg border border-gray-700 p-6 font-mono text-sm shadow-2xl">
-                        <div class="flex space-x-2 mb-4">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <div class="text-gray-400">
-                            <p><span class="text-purple-400">const</span> <span class="text-blue-400">profitStrategy</span> = <span class="text-purple-400">async</span> () => {</p>
-                            <p class="pl-4"><span class="text-gray-500">// 1. Clean Data Source</span></p>
-                            <p class="pl-4"><span class="text-purple-400">const</span> data = <span class="text-purple-400">await</span> sql.<span class="text-blue-300">query</span>(<span class="text-green-400">'SELECT * FROM crm_clean'</span>);</p>
-                            <p class="pl-4 text-transparent">.</p>
-                            <p class="pl-4"><span class="text-gray-500">// 2. AI Optimization</span></p>
-                            <p class="pl-4"><span class="text-purple-400">const</span> insight = ai.<span class="text-blue-300">analyze</span>(data, { model: <span class="text-green-400">'gpt-4-turbo'</span> });</p>
-                            <p class="pl-4 text-transparent">.</p>
-                            <p class="pl-4"><span class="text-gray-500">// 3. Automated Action</span></p>
-                            <p class="pl-4"><span class="text-purple-400">return</span> automation.<span class="text-blue-300">trigger</span>(<span class="text-green-400">'increase_roi'</span>, insight);</p>
-                            <p>}</p>
-                            <p class="mt-2 text-brand-accent font-bold">> System Ready. ROI Optimized.</p>
-                        </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Start online -->
+                    <article class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">Start Online</h3>
+                        <p class="text-sm text-brand-muted mb-4">Pro živnostníky a malé lokální firmy</p>
+                        <p class="text-gray-400 mb-4 flex-1">
+                            Jednoduchý, rychlý a srozumitelný web, který vás konečně dostane z vizitek a doporučení do online světa.
+                        </p>
+                        <ul class="text-sm text-gray-300 space-y-1 mb-4">
+                            <li>• 1–3stránkový web</li>
+                            <li>• Google Business & Firmy.cz</li>
+                            <li>• Základní lokální SEO</li>
+                            <li>• Cookie lišta + privacy page</li>
+                        </ul>
+                        <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded inline-block">Web + profily</span>
+                    </article>
+
+                    <!-- Výkonový web -->
+                    <article class="border border-brand-accent bg-gray-900/60 p-8 rounded-lg shadow-[0_0_25px_rgba(16,185,129,0.3)] flex flex-col relative">
+                        <span class="absolute -top-3 right-4 bg-brand-accent text-brand-dark text-xs font-bold px-2 py-1 rounded-full">
+                            Nejčastější volba
+                        </span>
+                        <h3 class="text-xl font-bold text-white mb-2">Výkonový web</h3>
+                        <p class="text-sm text-brand-muted mb-4">Pro menší a technické firmy</p>
+                        <p class="text-gray-400 mb-4 flex-1">
+                            Web jako jádro online přítomnosti – s logickou strukturou, obsahem pro lidi i AI 
+                            a připravený na další marketing.
+                        </p>
+                        <ul class="text-sm text-gray-300 space-y-1 mb-4">
+                            <li>• 5–10 stránek (služby, reference, kariéra…)</li>
+                            <li>• Strukturovaná data & SEO základ</li>
+                            <li>• GA4 & konverzní měření</li>
+                            <li>• Přístupnostní „light“ audit</li>
+                        </ul>
+                        <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded inline-block">Web + výkon</span>
+                    </article>
+
+                    <!-- Péče & compliance -->
+                    <article class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">Péče & Compliance</h3>
+                        <p class="text-sm text-brand-muted mb-4">Pro weby, které už běží</p>
+                        <p class="text-gray-400 mb-4 flex-1">
+                            Dlouhodobá péče, aktualizace, technické úpravy a dohled nad tím, aby web nezestárl 
+                            a nezpůsobil zbytečný problém.
+                        </p>
+                        <ul class="text-sm text-gray-300 space-y-1 mb-4">
+                            <li>• Aktualizace & zálohy</li>
+                            <li>• Kontrola formulářů & bezpečnosti</li>
+                            <li>• Cookie & GDPR technické nastavení</li>
+                            <li>• Pravidelné mini-reporty</li>
+                        </ul>
+                        <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded inline-block">Paušální péče</span>
+                    </article>
+
+                    <!-- Audit webu -->
+                    <article class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">Audit webu & přítomnosti</h3>
+                        <p class="text-sm text-brand-muted mb-4">Pro firmy s již existujícím webem</p>
+                        <p class="text-gray-400 mb-4 flex-1">
+                            Nechcete hned nový web? Začneme auditem toho, co už máte – UX, SEO, přístupnost, 
+                            legislativa a data. Výstupem je jasný seznam priorit.
+                        </p>
+                        <ul class="text-sm text-gray-300 space-y-1 mb-4">
+                            <li>• UX & obsah</li>
+                            <li>• SEO & dohledatelnost</li>
+                            <li>• GA4 & měření</li>
+                            <li>• Cookies, GDPR & EAA základ</li>
+                        </ul>
+                        <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded inline-block">Audit & roadmapa</span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAKT -->
+        <section id="kontakt" class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-brand-accent/5"></div>
+            <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+                <h2 class="text-4xl font-bold text-white mb-4">Pojďme zjistit, co vám web opravdu přináší</h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Nabízím krátkou nezávaznou konzultaci (cca 30 minut). Podíváme se na váš web a online přítomnost 
+                    a pojmenujeme největší rezervy – bez tlaku na okamžitý prodej.
+                </p>
+                
+                <form class="max-w-md mx-auto space-y-4 bg-gray-900 p-8 rounded-xl border border-gray-700 shadow-2xl" novalidate>
+                    <div>
+                        <label for="email" class="block text-left text-sm font-medium text-gray-400 mb-1">Váš e-mail</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required
+                               placeholder="filip@vasefirma.cz"
+                               class="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent">
                     </div>
-                </div>
+                    <div>
+                        <label for="website" class="block text-left text-sm font-medium text-gray-400 mb-1">Webová stránka</label>
+                        <input id="website" name="website" type="url"
+                               placeholder="https://www.vasefirma.cz"
+                               class="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-left text-sm font-medium text-gray-400 mb-1">Co vás aktuálně trápí?</label>
+                        <textarea id="message" name="message" rows="3"
+                                  placeholder="Např.: Máme web, ale nepřináší poptávky. Nevíme, zda máme v pořádku cookies a GDPR…"
+                                  class="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-accent text-brand-dark font-bold py-3 rounded hover:bg-green-400 transition-colors">
+                        Domluvit nezávaznou konzultaci
+                    </button>
+                    <p class="text-xs text-gray-500 mt-4">
+                        Vaše údaje použiji pouze pro domluvu konzultace. Žádný spam, žádné předávání třetím stranám.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-800 py-10 bg-brand-dark">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div>
+                <div class="text-brand-accent font-mono font-bold text-lg mb-1">&lt;FH_WebPartner /&gt;</div>
+                <p class="text-gray-500 text-sm">
+                    © 2025 Filip Hamerský – Weby & online přítomnost pro malé a technické firmy.
+                </p>
+            </div>
+            <div class="text-xs text-gray-500">
+                Standardně řeším: rychlost • dohledatelnost • cookies & GDPR • základní přístupnost
             </div>
         </div>
-    </section>
-
-    <section id="sluzby" class="py-24 bg-brand-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white text-center mb-16">High-Value Služby</h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors group">
-                    <h3 class="text-xl font-bold text-white group-hover:text-brand-accent mb-4">Datová hygiena & Audit</h3>
-                    <p class="text-gray-400 mb-4">Oprava měření v GA4, nastavení BigQuery a SQL reportingu. Budete vědět přesně, kam teče každá koruna.</p>
-                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">SQL</span>
-                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">Looker Studio</span>
-                </div>
-
-                <div class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors group">
-                    <h3 class="text-xl font-bold text-white group-hover:text-brand-accent mb-4">Automatizace Procesů</h3>
-                    <p class="text-gray-400 mb-4">Propojení vašeho e-shopu, CRM a marketingu přes Make.com. Ušetříte desítky hodin manuální práce týdně.</p>
-                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">Make.com</span>
-                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">API</span>
-                </div>
-
-                <div class="border border-gray-800 bg-gray-900/40 p-8 rounded-lg hover:border-brand-accent transition-colors group">
-                    <h3 class="text-xl font-bold text-white group-hover:text-brand-accent mb-4">Risk & Compliance</h3>
-                    <p class="text-gray-400 mb-4">Příprava webu na European Accessibility Act 2025. Technický audit a implementace přístupnosti.</p>
-                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">WCAG 2.1</span>
-                    <span class="text-xs font-mono text-gray-500 border border-gray-700 px-2 py-1 rounded">Audit</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="kontakt" class="py-24 relative overflow-hidden">
-        <div class="absolute inset-0 bg-brand-accent/5"></div>
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <h2 class="text-4xl font-bold text-white mb-6">Máte data, ale nemáte výsledky?</h2>
-            <p class="text-xl text-gray-300 mb-10">Nabízím 30minutový bezplatný audit, kde se podíváme na vaše data a řeknu vám, kde ztrácíte peníze.</p>
-            
-            <form class="max-w-md mx-auto space-y-4 bg-gray-900 p-8 rounded-xl border border-gray-700 shadow-2xl">
-                <div>
-                    <label class="block text-left text-sm font-medium text-gray-400 mb-1">Váš Email</label>
-                    <input type="email" placeholder="jan@firma.cz" class="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent">
-                </div>
-                <div>
-                    <label class="block text-left text-sm font-medium text-gray-400 mb-1">Webová stránka</label>
-                    <input type="text" placeholder="www.vasefirma.cz" class="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent">
-                </div>
-                <button type="button" class="w-full bg-brand-accent text-brand-dark font-bold py-3 rounded hover:bg-green-400 transition-colors">
-                    Rezervovat Audit Zisku
-                </button>
-                <p class="text-xs text-gray-500 mt-4">Žádný spam. Pouze data a strategie.</p>
-            </form>
-        </div>
-    </section>
-
-    <footer class="border-t border-gray-800 py-12 bg-brand-dark text-center">
-        <div class="text-brand-accent font-mono font-bold text-lg mb-4">&lt;Growth_Arch /&gt;</div>
-        <p class="text-gray-500 text-sm">© 2025 Jan Novák. Data-Driven Growth Architect.</p>
     </footer>
 
 </body>
